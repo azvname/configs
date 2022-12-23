@@ -1,0 +1,11 @@
+emacs/.emacs.d/ac-comphist.dat
+emacs/.emacs.d/auto-save-list/*
+emacs/.emacs.d/backups/*
+emacs/.emacs.d/.cache/*
+emacs/.emacs.d/.cask/*
+emacs/.emacs.d/elpa/*
+emacs/.emacs.d/ido.last
+emacs/.emacs.d/ido.last~
+emacs/.emacs.d/projectile-bookmarks.eld
+emacs/.emacs.d/snippets
+emacs/.emacs.d/themes/*

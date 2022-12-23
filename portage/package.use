@@ -1,0 +1,16 @@
+>=app-editors/emacs-27.2-r5 acl alsa cairo dbus gif gmp gpm gtk gui inotify jpeg lcms png ssl svg threads tiff xpm zlib xft
+>=app-emulation/qemu-6.0.0-r3 aio alsa bzip2 caps qemu_softmmu_targets_i386 curl doc fdt filecaps gtk jpeg ncurses nls opengl oss pin-upstream-blobs png sdl seccomp slirp udev usb vhost-net vnc xattr spice ssh usbredir vte 
+>=media-gfx/krita-4.4.5-r1 gif gsl jpeg raw -pdf -tiff
+>=media-libs/freetype-2.11.0-r1 X adobe-cff bzip2 cleartype-hinting png harfbuzz 
+>=media-video/ffmpeg-4.4-r1 X alsa bzip2 dav1d encode gnutls gpl iconv mp3 network opengl postproc sdl svg threads truetype vorbis x264 xvid zlib opus 
+>=sys-boot/grub-2.06-r1 fonts nls sdl themes truetype mount 
+>=sys-devel/clang-12.0.1 static-analyzer xml 
+>=sys-devel/gdb-10.2 nls python server xml 
+>=x11-terms/rxvt-unicode-9.26-r2 font-styles mousewheel perl startup-notification utmp wtmp 256-color iso14755 unicode3 xft
+>=x11-wm/dwm-6.2 savedconfig xinerama
+>=dev-db/postgresql-13.3 doc uuid
+>=sys-devel/clang-12.0.1 -xml
+>=sys-devel/gdb-10.2 -xml
+>=sys-devel/llvm-12.0.1 -xml
+>=app-i18n/ibus-1.5.22 kde
+

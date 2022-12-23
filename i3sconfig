@@ -1,0 +1,79 @@
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+# If the above line is not correctly displayed, fix your editor first!
+
+general {
+        #output_format = "dzen2"
+        colors = false
+        interval = 1
+}
+
+#order += "ipv6"
+order += "wireless _first_"
+order += "ethernet _first_"
+order += "battery all"
+#order += "disk /"
+#order += "load"
+order += "memory"
+order += "tztime local"
+order += "volume master"
+#order += "mem"
+
+
+volume master {
+  format = "♪: %volume"
+  format_muted = "♪: (%volume)"
+  device = "default"
+  mixer = "Master"
+  mixer_idx = 0
+  color_bad = "#FF0000"
+}
+
+wireless _first_ {
+	format_up = "W: (%quality at %essid) %ip"
+	#format_up = "W:%quality"
+	format_down = ""
+}
+
+#mem {
+#	format = "mem: $(cat /proc/meminfo|grep -i memfree)"
+#  #threshold_degraded = "1G"
+#  #format_degraded = "MEMORY < %available"
+#}
+
+ethernet _first_ {
+	format_up = "E: %ip (%speed)"
+	format_down = ""
+}
+
+battery all {
+  last_full_capacity = true
+	format = "%status %percentage %remaining"
+}
+
+disk "/" {
+	format = "%avail"
+}
+
+load {
+	format = "%1min"
+}
+
+memory {
+	#format = "%used | %available"
+	#threshold_degraded = "1G"
+	#format_degraded = "MEMORY < %available"
+    format = "%used"
+}
+
+tztime local {
+    #format = "%Y-%m-%d %H:%M"
+	format = "%Y-%m-%d %H:%M:%S"
+}
+
+
+

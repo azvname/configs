@@ -1,0 +1,157 @@
+URxvt.scrollBar: 	            	true
+URxvt.scrollBar_right:					true
+URxvt*scrollstyle:              plain
+!URxvt*scrollColor:							#121212
+URxvt*scrollColor:							#aaaaaa
+URxvt*jumpScroll:								true
+URxvt*skipScroll:								true 
+URxvt.letterSpace: 		          0
+URxvt.underlineURLs:   	        false
+URxvt*saveLines:		            13000
+URxvt*skipBuiltinGlyphs:        true
+URxvt*cursorBlink:              true
+URxvt.secondaryScroll:					0
+URxvt.boldFont:
+URxvt.secondaryWheel:						1
+URxvt*lineSpace:								0
+URxvt*title:										rxvt-unicode
+!URxvt*font:                     -xos4-terminus-medium-r-normal-*-18-*-*-72-*-*-*-1
+URxvt*font:                     -xos4-terminus-medium-r-normal-*-18-*-*-72-*-*-*-1
+
+!URxvt*font:                     xft:Bront:11
+!URxvt*font:										 xft:xos4 Terminus:size=16
+URxvt*depth:										32
+!URxvt*fading:										10
+URxvt*fadeColor:								black
+URxvt.inputMethod:							ibus
+URxvt.preeditType:							OverTheSpot
+!URxvt*transparent:							true
+!URxvt*shading:									10
+
+!URxvt.keysym.Shift-Up:					command:\033]720;1\007
+!URxvt.keysym.Shift-Down:				command:\033]721;1\007
+
+!xft.dpi:         96
+!Xft.antialias:  false
+!Xft.rgba:       rgb
+!Xft.hinting:    full
+!Xft.hintstyle:  hintslight
+!Xft.autohint:   false
+!Xft.lcdfilter:  lcddefault
+
+
+#define base00 #1d1f21
+#define base01 #282a2e
+#define base02 #373b41
+#define base03 #969896
+#define base04 #b4b7b4
+#define base05 #c5c8c6
+#define base06 #e0e0e0
+#define base07 #ffffff
+#define base08 #cc6666
+#define base09 #de935f
+#define base0A #f0c674
+#define base0B #b5bd68
+#define base0C #8abeb7
+#define base0D #81a2be
+#define base0E #b294bb
+#define base0F #a3685a
+
+URxvt*foreground:   base05
+#ifdef background_opacity
+URxvt*background:   [background_opacity]base00
+#else
+URxvt*background:   base00
+#endif
+URxvt*cursorColor:  base05
+
+URxvt*color0:       base00
+URxvt*color1:       base08
+URxvt*color2:       base0B
+URxvt*color3:       base0A
+URxvt*color4:       base0D
+URxvt*color5:       base0E
+URxvt*color6:       base0C
+URxvt*color7:       base05
+
+URxvt*color8:       base03
+URxvt*color9:       base08
+URxvt*color10:      base0B
+URxvt*color11:      base0A
+URxvt*color12:      base0D
+URxvt*color13:      base0E
+URxvt*color14:      base0C
+URxvt*color15:      base07
+
+! Note: colors beyond 15 might not be loaded (e.g., xterm, urxvt),
+! use 'shell' template to set these if necessary
+URxvt*color16:      base09
+URxvt*color17:      base0F
+URxvt*color18:      base01
+URxvt*color19:      base02
+URxvt*color20:      base04
+URxvt*color21:      base06
+
+
+
+
+
+!
+!colors:
+!  background:         '#2d2d2d'
+!  current_line:       '#393939'
+!  selection:          '#515151'
+!  foreground:         '#cccccc'
+!  comment:            '#999999'
+!  red:                '#f2777a'
+!  orange:             '#f99157'
+!  yellow:             '#ffcc66'
+!  green:              '#99cc99'
+!  aqua:               '#66cccc'
+!  blue:               '#6699cc'
+!  purple:             '#cc99cc'  
+!meta:
+!  description: 'Tomorrow Night 80s theme by jmfurlott <http://jmfurlott.com>'
+!window_colors:
+!  focused:
+!    border:           'green'
+!    background:       'green'
+!    text:             '#000000'
+!    indicator:        'background'
+!  focused_inactive:
+!    border:           'current_line'
+!    background:       'current_line'
+!    text:             '#888888'
+!    indicator:        '#292d2e'
+!  unfocused:
+!    border:           'background'
+!    background:       'background'
+!    text:             'comment'
+!    indicator:        '#292d2e'
+!  urgent:
+!    border:           '#2f343a'
+!    background:       '#900000'
+!    text:             '#ffffff'
+!    indicator:        '#900000'
+!bar_colors:
+!  separator:          'selection'
+!  background:         'background'
+!  statusline:         'foreground'
+!  focused_workspace:
+!    border:           'green'
+!    background:       'green'
+!    text:             '#000000'
+!  active_workspace:
+!    border:           '#333333'
+!    background:       '#333333'
+!    text:             '#ffffff'
+!  inactive_workspace:
+!    border:           'background'
+!    background:       'background'
+!    text:             'comment'
+!  urgent_workspace:
+!    border:           'red'
+!    background:       'red'
+!    text:             '#ffffff'
+!
+!
