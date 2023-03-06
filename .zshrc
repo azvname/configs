@@ -1,27 +1,14 @@
-# Created by newuser for 5.8.1
-
-
-alias hm='python ~/Code/useful_scripts/rand.py'
-alias ls='ls --color=auto'
-alias nv='nvim'
-
-alias mb1='sudo mount /dev/sdb1 ~/tmpb'
-alias ub1='sudo umount /dev/sdb1'
-alias mc1='sudo mount /dev/sdc1 ~/tmpc'
-alias uc1='sudo umount /dev/sdc1'
-#alias pastebinit='pastebinit -b http://paste.ubuntu.com'
-alias wgetpaste='/home/zakhar/soft/t1/wgetpaste'
-#alias ffplay='ffplay -nodisp -hide_banner'
-
+#[ -f .aliases ] && source .aliases или так
 HISTFILE=~/.zhistory
 HISTSIZE=10000
 SAVEHIST=10000
 
+LS_COLORS=$LS_COLORS:'di=0;36:' ; export LS_COLORS
 setopt APPEND_HISTORY
 setopt HIST_REDUCE_BLANKS
 setopt HIST_IGNORE_SPACE
 
-ttyctl -f
+ttyctl -f # для автозавершения
 
 autoload -U compinit promptinit
 compinit
@@ -31,50 +18,36 @@ prompt walters
 
 
 zstyle ':completion:*' menu select
-setopt completealiases
+setopt completealiases # для автозавешения алиасов
 
 autoload -U compinit && compinit
-
-
 
 #export all_proxy="socks://127.0.0.1:9050/"
 #export http_proxy="http://127.0.0.1:8118/"
 #export https_proxy="http://127.0.0.1:8118/"
-
-
+#export TMPDIR=/home/zakhar/
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:'/opt/1cv8t/x86_64/8.3.22.1603/'
+#'/opt/1cv8t/x86_64/8.3.22.1603/1cv8st'
+export GOPATH=/home/zakhar/gopath
+export PATH=$PATH:/home/zakhar/.local/bin
 #setopt HIST_IGNORE_DUPS
-
 #setopt EXTENDED_HISTORY
 
-
-
 autoload -U colors && colors
-
 #prompt="%{$fg[red]}%n%{$reset_color%}@%{$fg[blue]%}%m{$reset_color%} %%"
+# настройка приглашения командной строки
+PROMPT="[%{$fg_no_bold[blue]%}%n@%{$reset_color%}%{$fg_bold[blue]%}%U%m%u%{$reset_color%}]$ "
+RPROMPT="%{$fg_no_bold[cyan]%}%~ %{$reset_color%}% [%{$fg_no_bold[cyan]%}%?%{$reset_color%}] "
 
-PROMPT="[ %{$fg_no_bold[blue]%}%n@%{$reset_color%}%{$fg_bold[blue]%}%U%m%u%{$reset_color%} ] "
-RPROMPT="%{$fg_no_bold[green]%}%~ %{$reset_color%}% [%{$fg_no_bold[green]%}%?%{$reset_color%}] "
-
-if [ -f /usr/bin/grc ]; then
- alias gcc="grc --colour=auto gcc"
- alias irclog="grc --colour=auto irclog"
- alias log="grc --colour=auto log"
- alias netstat="grc --colour=auto netstat"
- alias ping="grc --colour=auto ping"
- alias proftpd="grc --colour=auto proftpd"
- alias traceroute="grc --colour=auto traceroute"
-fi
 
 #autoload -U run-help
 #autoload run-help-git
 #autoload run-help-svn
 #autoload run-help-svk
-#unalias run-help
-#alias help=run-help  
+#unalias run-alias help=run-help  
 
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-#source /home/zakhar/scripts/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 #autoload -Uz vcs_info
 #precmd_vcs_info() { vcs_info }
 #precmd_functions+=( precmd_vcs_info )
@@ -130,12 +103,18 @@ echo "'$1' не является допустимым файлом"
 fi
 }
 
+#scripts/zsh-syntax-highlighting/zsh-syntax-highlighting.
+#wine /home/zakhar/.wine/drive_c/Program Files (x86)/CA/ERwin Process Modeler r7.3/binaries/AFPM70.exe
 
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/zakhar/scripts/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+if [[ -f ~/.zsh/zshalias||-f ~/.zsh/zdocker ]]; then
+    source ~/.zsh/zshalias
+    source ~/.zsh/zdocker
+else
+    print "404: ~/.zsh/zshalias not found."
+    print "404: ~/.zsh/zdocker not found."
+fi
 
-
-
-
-
-
-#scripts/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

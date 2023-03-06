@@ -1,0 +1,31 @@
+#!/bin/zsh
+#sudo docker exec -it sql1 /opt/mssql-tools/bin/sqlcmd \
+#-S localhost -U SA -P '<YourNewStrong!Passw0rd>' \
+#-Q "BACKUP DATABASE [WideWorldImporters] TO DISK = N'/var/opt/mssql/backup/wwi_2.bak'
+#WITH NOFORMAT, NOINIT, NAME = 'WideWorldImporters-full', SKIP, NOREWIND, NOUNLOAD, STATS = 10"
+
+#metasploit
+alias msfconsole='sudo docker run --rm -it -p 4444:4444 -p 80:80 -p 8080:8080 -p 443:443 -p 445:445 -p 8081:8081 metasploitframework/metasploit-framework'
+alias msfvenom='sudo docker run --rm -it -v "${HOME}/.msf4:/home/msf/.msf4" -v "${PWD}:/data" metasploitframework/metasploit-framework ./msfvenom'
+
+
+#докер докер докер
+alias setnamefordocker="sudo docker run --name=mysql_docker  -d mysql/mysql-serve" #назначить имя для докера, который я скачал
+alias showproccessindocker="sudo docker ps" #посмотреть что выполняется в докере
+alias showlogsforcontainer="sudo docker logs mysql_docker" #посмотреть логи
+alias getjson_docker_file="sudo docker inspect mysql_docker" #получить json выхлоп
+alias in_docker_bash="sudo docker exec -it mysql1 bash -l;" 
+alias mssql="/opt/mssql-tools/bin/sqlcmd -S localhost -U SA"
+alias ed='sudo systemctl stop docker.socket && sudo systemctl stop docker.service && sudo systemctl stop containerd'
+alias sd='sudo systemctl start docker.service'
+alias sx='export PORT=80 && sudo sh -c "docker run --rm -d -v ${PWD}/searx:/etc/searx -p $PORT:8080 -e BASE_URL=http://localhost:$PORT/ searx/searx"' #запуск searx
+alias importdocker="sudo docker load -i "
+alias exportdocker="sudo docker import "
+#for that sudo docker exec -it mssql0 "bash"
+#when i in docer '/opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P "Hello123World"'
+
+#чтобы войти в докер, который работает в фоновом режиме
+#sudo docker exec -i -t <имя_или_id> /bin/bash
+#
+#удалить контейнер 
+#docker rm -f <имя_или_id>

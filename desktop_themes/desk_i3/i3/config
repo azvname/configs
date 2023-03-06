@@ -4,26 +4,23 @@
 # Should you change your keyboard layout some time, delete
 # this file and re-run i3-config-wizard(1).
 #
-
 # i3 config file (v4)
 #
-# Please see https://i3wm.org/docs/userguide.html for a complete reference!
-
+# Please see https:     //i3wm.org/docs/userguide.html for a complete reference!
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-# font pango:monospace 9
-# font pango:Terminus bold 11
-font pango:Terminus 11
-
+# font pango:           monospace 9
+# font pango:           Terminus bold 11
+font pango:             Terminus 11
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 8
+#font pango:            DejaVu Sans Mono 8
 
 # Start XDG autostart .desktop files using dex. See also
-# https://wiki.archlinux.org/index.php/XDG_Autostart
+# https:                //wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
@@ -32,6 +29,8 @@ exec --no-startup-id dex --autostart --environment i3
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+
+
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -60,7 +59,7 @@ bindsym $mod+Shift+q kill
 # start dmenu (a program launcher)
 # 0bindsym $mod+p exec --no-startup-id dmenu_run -fn "monospace 10" -nb "#dddddd" -nf "#000000"
 # bindsym $mod+p exec --no-startup-id dmenu_run -nf "#bbbbbb" -nb "#222222" -sb "#bb6500" -sf "#000000"
-bindsym $mod+p exec --no-startup-id dmenu_run -nf "#bbbbbb" -nb "#222222" -sb "#006577" -sf "#000000" -fn "terminus-13"
+bindsym $mod+p exec --no-startup-id dmenu_run -nf "#bbbbbb" -nb "#222222" -sb "#2ab1b0" -sf "#000000" -fn "terminus-13"
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # bindsym $mod+p exec "rofi -show drun"
@@ -181,7 +180,7 @@ mode "resize" {
         bindsym Up resize shrink height 10 px or 10 ppt
         bindsym Right resize grow width 10 px or 10 ppt
 
-        # back to normal: Enter or Escape or $mod+r
+        # back to normal:Enter or Escape or $mod+r
         bindsym Return mode "default"
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
@@ -193,25 +192,53 @@ bindsym $mod+Shift+p exec "pkill -9 telegram && setxkbmap us,ru ,winkeys grp:cap
 #bindsym $mod+Shift+o exec "pkill -9 ibus"
 
 
-assign [class="^Qemu-system-x86_64$"] 6
+#assign [class="^Qemu-system-x86_64$"] 6
 assign [class="^Firefox-esr$"] 3
 #i3-msg '[class="firefox"] move to workspace '
 assign [class="^vlc$"] 3
 assign [class="^KeePassXC$"] 3
 assign [class="^TelegramDesktop$"]	3
-assign [class="^VirtualBox Machine$"] 5
-assign [class="^VirtualBox Manager$"] 6
+#assign [class="^VirtualBox Machine$"] 5
+#assign [class="^VirtualBox Manager$"] 6
 assign [class="^Atril$"] 2
+
 assign [class="^DBeaver$"] 4
+assign [class="^DBeaver $"] 4
+assign [class="^Java$"] 4
+
+
 assign [class="^sqlitebrowser$"] 2
 assign [class="^Virt-manager$"] 6
+#assign [class="^feh$"] 4
+
+
+assign [class="^OpenOffice 4.1.13$"] 2
+
+
+
 
 for_window [class="matplotlib" instance="matplotlib"] floating enable
 for_window [class="Tk" instance="tk"] floating enable
+for_window [class="Barrier" instance="barrier"] floating disable 
+
+#floating_minimum_size <width> x <height>
+floating_maximum_size 1000 x 600 # максимальный размер плавающего окна
+#floating_minimum_size 1000 x 600 # минимальный размер плавающего окна
+#title_align left
+#popup_during_fullscreen smart|ignore|leave_fullscreen
+#popup_during_fullscreen ignore
+#strip_workspace_numbers yes
+#strip_workspace_name yes
 
 
 
-bindsym $mod+u exec "dmenu_extended_run"
+
+
+
+
+
+
+#bindsym $mod+u exec "dmenu_extended_run"
 bindsym $mod+r mode "resize"
 
 bindsym Print exec scrot '%Y-%m-%d_%H:%M:%S.png' -e 'mv $f ~/Pictures/Screenshots/'
@@ -228,15 +255,35 @@ bar {
   status_command i3status
   position top
   separator_symbol "::"	
-  binding_mode_indicator yes
+  #binding_mode_indicator yes
   colors {
-  	background						#232323
-	statusline 						#d3d3d3
-	separator  						#2ab1b0
+  	background			   #232323
+	#statusline 		   #d3d3d3
+	statusline 			   #2ab1b0
+	separator  			   #2ab1b0
 	focused_workspace      #2fa5a3 #2ab1b0 #ffffff
+	#focused_workspace     #2ab1b0 #fd28ff #ffffff
 	#active_workspace      #777777 #000000 #eeeeee
 	inactive_workspace     #ffffff #5a5a5a #ffffff 
-	#urgent_workspace      #ff7777 #333333 #ffffff
+	urgent_workspace       #ff1111 #900000 #ffffff
+
   }
 
 }
+#@57.8005346,56.8604447,8.17z
+# class                 border  backgr. text    indicator child_border
+#client.focused          #4c7899 #2ab1b0 #ffffff #2e9ef4   #285577
+client.focused          #333333 #5a5a5a #ffffff #2e9ef4   #333333
+#client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+#client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+#client.urgent           #ffffff #900000 #ffffff #900000   #900000
+#client.placeholder      #ffffff #0c0c0c #ffffff #000000   #0c0c0c
+client.placeholder      #ffffff #0c0c0c #ffffff #000000   #0c0c0c
+
+
+#client.background       #ffffff
+
+
+
+
+

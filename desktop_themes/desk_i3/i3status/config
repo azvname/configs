@@ -7,17 +7,18 @@
 # If the above line is not correctly displayed, fix your editor first!
 
 general {
-        #output_format = "dzen2"
-        colors = false
-        interval = 1
+  #output_format = "dzen2"
+  colors = false
+  interval = 1
+  #color="#111111"
 }
 
-#order += "ipv6"
+order += "ipv6"
 order += "wireless _first_"
 order += "ethernet _first_"
 order += "battery all"
-#order += "disk /"
-#order += "load"
+order += "disk /"
+order += "load"
 order += "memory"
 order += "tztime local"
 order += "volume master"
@@ -34,9 +35,10 @@ volume master {
 }
 
 wireless _first_ {
-	format_up = "W: (%quality at %essid) %ip"
-	#format_up = "W:%quality"
-	format_down = ""
+  #format_up = "%quality %frequency"
+  #format_up = "W: (%quality at %essid) %ip"
+  format_up = "W:%quality %frequency"
+  format_down = ""
 }
 
 #mem {
@@ -52,7 +54,18 @@ ethernet _first_ {
 
 battery all {
   last_full_capacity = true
-	format = "%status %percentage %remaining"
+  format = "%status %percentage %remaining"
+  format_down = "No battery"
+
+  #  status_full = "" # статус по
+  #format = " %status %percentage %remaining" # статус в режиме работы от батареи
+
+  #status_bat = "" # статус в режиме работы от батареи
+  #status_unk = "? UNK" # неизвестный статус
+  #status_full = "" # статус по
+
+
+
 }
 
 disk "/" {
@@ -65,14 +78,15 @@ load {
 
 memory {
 	#format = "%used | %available"
-	#threshold_degraded = "1G"
+	#threshold_degraded = "1M"
 	#format_degraded = "MEMORY < %available"
     format = "%used"
+
 }
 
 tztime local {
-    #format = "%Y-%m-%d %H:%M"
-	format = "%Y-%m-%d %H:%M:%S"
+    format = "%Y-%m-%d %H:%M"
+	#format = "%Y-%m-%d %H:%M:%S"
 }
 
 

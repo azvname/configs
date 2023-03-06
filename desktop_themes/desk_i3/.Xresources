@@ -24,7 +24,7 @@ URxvt.secondaryScroll:0
 URxvt.boldFont:
 URxvt.secondaryWheel:1
 URxvt*lineSpace:0
-URxvt*title:term
+!URxvt*title:term
 !URxvt*font:-xos4-terminus-medium-r-normal-*-18-*-*-72-*-*-*-1
 !URxvt.font:xft:monospace:pixelsize=14
 !URxvt*font:xft:source pro regular:9

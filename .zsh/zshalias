@@ -1,0 +1,144 @@
+#!/usr/bin/zsh
+# Created by newuser for 5.8.1
+alias hm='python ~/Code/useful_scripts/rand.py'
+#update users set passwd=md5('YOUR_NEW_PASSWORD') where alias='Admin'; # для забикса
+# если node js будет ругаться что ему места мало echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+# монтирование отмонтирование
+alias mb1='sudo mount /dev/sdb1 ~/tmpb'
+alias ub1='sudo umount /dev/sdb1'
+alias mc1='sudo mount /dev/sdc1 ~/tmpc'
+alias uc1='sudo umount /dev/sdc1'
+alias setimage='feh --bg-fill '
+alias startx='startx ~/.xinitrc '  
+#alias pastebinit='pastebinit -b http://paste.ubuntu.com'
+alias ifahavehibernation='sudo ntfs-3g -o remove_hiberfile /dev/sdXN /path/to/mount'
+
+alias wgetpaste='/home/zakhar/soft/t1/wgetpaste' # wgetpaste просто залить в нет текстовый файл
+alias wifis='sudo mdk4 wlx983f9f190388 b -a -m -s 500'
+# git -C .config/nvim/pack/plugins/start clone https://github.com/preservim/nerdtree #клонировать что-либо в конкретную папку
+
+# переключение между tty-ями
+alias c='sudo chvt '
+
+
+# Мои проекты
+alias site0='node ~/sandbox/site0/app.js' # мои тесты на ноде
+alias site1l='firefox /home/zakhar/sandbox/site1l/index.html'
+alias site2l='cd ~/sandbox/site2l/ && npm run dev' # пока не придумал как нормально сделать
+alias site3l='cd ~/sandbox/site3l/ && npm run dev& ; go run server.go&'
+alias site4='cd ~/sandbox/site4/ && npm start'
+
+#настройка программ
+alias feh='feh 2>/dev/null'
+alias gdb='gdb -quiet'
+alias ffplay='ffplay -nodisp -hide_banner -autoexit'
+alias nv='nvim'
+alias ls='ls --color=auto'
+alias off='sudo shutdown -P -h now'
+alias poweroff='sudo poweroff'
+alias reboot='sudo reboot'
+
+
+# для глаз
+alias day='redshift -l 57.8005346:56.8604447 &'
+alias night='redshift -l 36.9181291:-63.4199161 &'
+
+alias my='
+cd ~/.config/ && 
+mv i3_my i3 &&
+mv i3status_my i3status && 
+cd &&
+mv .Xresources.d_my .Xresources.d && 
+mv .Xresources_my .Xresources &&
+xrdb -merge ~/.Xresources &&
+i3-msg reload && 
+i3-msg restart'
+
+alias def='
+cd ~/.config/ && 
+mv i3 i3_my && 
+mv i3status i3status_my && 
+cd &&
+mv .Xresources.d .Xresources.d_my &&
+mv .Xresources .Xresources_my &&
+touch .Xresources
+xrdb -merge ~/.Xresources &&
+i3-msg reload && 
+i3-msg restart'
+
+
+
+alias red='cd ~/.config/i3/ && 
+rm config &&
+ln -s config_red config &&
+i3-msg reload && 
+i3-msg restart &&
+cd ~'
+alias blue='cd ~/.config/i3/ && 
+rm config &&
+ln -s config_blue config &&
+i3-msg reload && 
+i3-msg restart &&
+cd ~'
+
+alias site7c='cd ~/sandbox/web/site7/ && npm run dev'
+alias site7s='cd ~/sandbox/web/site7/ && npm start'
+#alias gserver='cd ~/sandbox/lab3/ && go run server.go'
+#alias start3='cd ~/sandbox/lab3/ && urxvt -e sh -c "pwd&;zsh";urxvt -e zsh -c "ls&;zsh"'
+alias acp='python -m venv env && source env/bin/activate' # создать и активировать среду для python
+
+#qemu
+alias devuan='cd kvm/ && sudo ./kvm.sh devuan_openrc.qcow2'
+
+#virtualbox
+alias win='VBoxManage startvm win8.1'
+alias debian='VBoxManage startvm debian --type headless'
+
+
+alias bpmodeler='wine "/home/zakhar/.wine/drive_c/Program Files (x86)/CA/ERwin Process Modeler r7.3/binaries/AFPM70.exe"'
+alias compact='VboxManage.exe modifyhd "D:\Oracle VM VirtualBox\Windows 10 x86 Ent 1607.vdi" --compact'
+
+
+
+
+
+# режим мониторинга сети: стоп и старт
+alias smon="sudo sh -c 'systemctl stop NetworkManager && ip link set dev wlan0 down && iw wlan0 set monitor control && ip link set dev wlan0 up'"
+alias emon="sudo sh -c 'ip link set dev wlan0 down && iw wlan0 set type managed && ip link set dev wlan0 up && systemctl start NetworkManager'"
+
+alias synctime='sudo ntpdate pool.ntp.org' # обновление времени
+
+# переключение между моими мониторами
+alias m2='xrandr --output VGA-1 --mode 1600x900 --output eDP-1 --off'
+alias m1='xrandr --output eDP-1 --mode 1366x768 --output VGA-1 --off'
+
+
+alias getentropy="cat /proc/sys/kernel/random/entropy_avail"
+alias apthis="cat /var/log/apt/history.log|less"
+
+
+# VPN wireguard
+alias a11="sudo ip a add 10.10.10.11/24 dev eth0"
+alias wgs="sudo wg-quick up wg0"
+alias wgr="sudo wg-quick down wg0 && sudo wg-quick up wg0"
+alias wge="sudo wg-quick down wg0"
+
+
+if [ -f /usr/bin/grc ]; then
+ alias gcc="grc --colour=auto gcc"
+ alias irclog="grc --colour=auto irclog"
+ alias log="grc --colour=auto log"
+ alias netstat="grc --colour=auto netstat"
+ alias ping="grc --colour=auto ping"
+ alias proftpd="grc --colour=auto proftpd"
+ alias traceroute="grc --colour=auto traceroute"
+fi
+
+
+
+
+
+
+
+
+alias mpip='cd ~/.local/lib/python3.9/'
