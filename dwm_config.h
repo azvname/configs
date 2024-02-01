@@ -94,7 +94,7 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 
 static const char *dmenucmd[] = { "rofi", "-show", "run", "drun", "-show_icons", "-xoffset", "0" ,"-yoffset", "0", NULL };
 // static const char *dmenucmd[] = { "rofi", "-show", "drun", "-show_icons", "-xoffset", "0" ,"-yoffset", "0", NULL };
-static const char *cmdprintscreen[] = { "scrot", "-d3", "/home/yuno/Pictures/Screenshots/%Y-%m-%d-%s_$wx$h.png", NULL };
+static const char *cmdprintscreen[] = { "scrot", "-d3", "/home/zakhar/Pictures/Screenshots/%Y-%m-%d-%s_$wx$h.png", NULL };
 static const char *printscreen[] = { "flameshot", "gui", NULL };
 static const char *termcmd[]  = { "urxvt", NULL };
 

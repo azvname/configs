@@ -21,11 +21,12 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(auth-source-save-behavior nil)
  '(delete-selection-mode t)
  '(helm-sources-using-help-echo-popup nil)
  '(ivy-mode t)
  '(package-selected-packages
-   '(vue-mode helm-projectile ac-html emmet-mode ido-vertical-mode go-mode go-autocomplete go vimrc-mode jedi company-irony irony evil auto-complete-clang-async git-auto-commit-mode tern-auto-complete zzz-to-char ivy company))
+   '(helm vue-html-mode fish-mode vue-mode helm-projectile ac-html emmet-mode ido-vertical-mode go-mode go-autocomplete go vimrc-mode jedi company-irony irony evil auto-complete-clang-async git-auto-commit-mode tern-auto-complete zzz-to-char ivy company))
  '(selection-coding-system 'utf-8))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -96,7 +97,7 @@
 (setq unix-sbcl-bin          "/usr/bin/sbcl")
 (setq unix-init-path         "~/.emacs.d/lisp")
 ;(setq unix-init-ct-path      "~/.emacs.d/lisp/plugins/color-theme")
-(setq unix-init-ac-path      "~/.emacs.d/lisp/plugins/auto-complete")
+;(setq unix-init-ac-path      "~/.emacs.d/lisp/plugins/auto-complete")
 (setq unix-init-slime-path   "/usr/share/common-lisp/source/slime/")
 ; (setq unix-init-ac-dict-path "~/.emacs.d/lisp/plugins/auto-complete/dict")
 
@@ -182,6 +183,9 @@
 ; Fringe settings
 (fringe-mode '(8 . 0)) ;; органичиталь текста только слева
 ; (setq-default indicate-empty-lines t) ;; отсутствие строки выделить глифами рядом с полосой с номером строки
+
+
+
 (setq-default indicate-buffer-boundaries 'left) ;; индикация только слева
 
 ; Display file size/time in mode-line
@@ -192,7 +196,7 @@
 
 
 (ivy-mode)
-
+(global-set-key (kbd "C-x C-b") #'ivy-switch-buffer)
 ;(require 'ido-vertical-mode)
 ;(ido-mode 1)
 ;(ido-vertical-mode 1)
@@ -201,10 +205,26 @@
 
 
 
+;; Включение режима "только для чтения"
+(defun enable-read-only-mode ()
+      "Включить режим 'только для чтения'."
+        (interactive)
+          (read-only-mode 1)
+            (message "Режим 'только для чтения' включен."))
+
+;; Отключение режима "только для чтения"
+(defun disable-read-only-mode ()
+      "Отключить режим 'только для чтения'."
+        (interactive)
+          (read-only-mode 0)
+            (message "Режим 'только для чтения' отключен."))
+
+;; Привязка команд к сочетаниям клавиш
+(global-set-key (kbd "C-c C-e") 'enable-read-only-mode)    ;; Например, используйте C-c C-e для включения
+(global-set-key (kbd "C-c C-d") 'disable-read-only-mode)   ;; и C-c C-d для отключения
+
 
 ;(global-set-key (kbd "C-x C-b") #'helm-buffers-list)
-(global-set-key (kbd "C-x C-b") #'ivy-switch-buffer)
-
 
 
 ;(require 'bs)
@@ -290,14 +310,27 @@
 ;;(setq evil-want-C-u-scroll t)
 ;;(require 'evil)
 
+(define-generic-mode 'vimrc-generic-mode
+    '()
+    '()
+    '(("^[\t ]*:?\\(!\\|ab\\|map\\|unmap\\)[^\r\n\"]*\"[^\r\n\"]*\\(\"[^\r\n\"]*\"[^\r\n\"]*\\)*$"
+       (0 font-lock-warning-face))
+      ("\\(^\\|[\t ]\\)\\(\".*\\)$"
+      (2 font-lock-comment-face))
+      ("\"\\([^\n\r\"\\]\\|\\.\\)*\""
+       (0 font-lock-string-face)))
+    '("/vimrc\\'" "\\.vim\\(rc\\)?\\'")
+    '((lambda ()
+        (modify-syntax-entry ?\" ".")))
+    "Generic mode for Vim configuration files.")
 
 ;(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
 ;(require 'auto-complete-config)
 ;(ac-config-default)
 ;
-(require 'auto-complete-config)
-(ac-config-default)
-(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
+;(require 'auto-complete-config)
+;(ac-config-default)
+;(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
 
 ;(require 'helm-projectile)
 ;(helm-projectile-on)
@@ -310,3 +343,18 @@
 ;; Create and delete a view
 ;(global-set-key (kbd "C-c v") 'ivy-push-view)
 ;(global-set-key (kbd "C-c V") 'ivy-pop-view)
+;(setq ivy-virtual-abbreviate 'full)
+;(setq ivy-display-style 'fancy)
+;(setq ivy-use-virtual-buffers t)
+;(setq ivy-virtual-abbreviate 'full)
+
+
+
+
+;(add-hook 'sh-mode-hook
+;  (lambda ()
+;    (local-set-key (kbd "C-c C-d") 'disable-read-only-mode)))
+
+
+(setq auto-mode-alist (cons '("\\.\\(pde\\|ino\\)$" . arduino-mode) auto-mode-alist))
+(autoload 'arduino-mode "arduino-mode" "Arduino editing mode." t)

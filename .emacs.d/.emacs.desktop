@@ -2,294 +2,66 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Fri Dec 23 10:05:47 2022
+;; Created Thu Feb  1 05:57:30 2024
 ;; Desktop file format version 208
 ;; Emacs version 27.1
 
 ;; Global section:
-(setq desktop-saved-frameset [frameset 1 (25509 14123 521193 314000) (desktop . "208") "zakhar@devuan" nil nil ((((minibuffer . t) (tty-type . "rxvt-unicode-256color") (tty . "/dev/tty") (display-type . color) (background-mode . light) (cursor-color . "black") (menu-bar-lines . 0) (tool-bar-lines . 0) (vertical-scroll-bars) (foreground-color . "gainsboro") (right-fringe . 0) (left-fringe . 8) (background-color . "unspecified-bg") (font . "tty") (height . 38) (width . 131) (modeline . t) (unsplittable) (tab-bar-lines . 0) (frameset--id . "582D-E415-F534-2DC1") (frameset--mini t)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 2) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 4) (min-pixel-width . 10) (min-pixel-height-ignore . 2) (min-pixel-width-ignore . 2) (min-pixel-height-safe . 1) (min-pixel-width-safe . 2)) leaf (pixel-width . 131) (pixel-height . 37) (total-width . 131) (total-height . 37) (normal-height . 1.0) (normal-width . 1.0) (buffer "Общение между процессами с помощью очередей.py" (selected . t) (hscroll . 0) (fringes 0 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 63) (start . 1)) (prev-buffers (".emacs" 7051 7789) ("Общение между процессами с помощью очередей.py" 330 711) ("Home.vue" 1 268) (".xinitrc" 1 434))))])
+(setq desktop-saved-frameset [frameset 1 (26042 60538 948744 278000) (desktop . "208") "user@server" nil nil ((((minibuffer . t) (tty-type . "rxvt-unicode-256color") (tty . "/dev/tty") (display-type . color) (background-mode . light) (cursor-color . "black") (menu-bar-lines . 0) (tool-bar-lines . 0) (vertical-scroll-bars) (foreground-color . "gainsboro") (right-fringe . 0) (left-fringe . 8) (background-color . "unspecified-bg") (font . "tty") (height . 45) (width . 167) (modeline . t) (unsplittable) (tab-bar-lines . 0) (frameset--id . "F82A-3A03-F09F-6630") (frameset--mini t)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 2) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 4) (min-pixel-width . 10) (min-pixel-height-ignore . 2) (min-pixel-width-ignore . 2) (min-pixel-height-safe . 1) (min-pixel-width-safe . 2)) leaf (pixel-width . 167) (pixel-height . 44) (total-width . 167) (total-height . 44) (normal-height . 1.0) (normal-width . 1.0) (buffer ".my-bashrc" (selected . t) (hscroll . 0) (fringes 0 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 57) (start . 1))))])
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
-(setq search-ring '(#("и пол" 0 5 (isearch-regexp-function nil isearch-case-fold-search t)) #("toInd" 0 5 (isearch-regexp-function nil isearch-case-fold-search nil)) #("fal" 0 3 (isearch-case-fold-search t isearch-regexp-function nil)) #("lab" 0 3 (isearch-regexp-function nil isearch-case-fold-search t)) #("$" 0 1 (isearch-regexp-function nil isearch-case-fold-search t)) #("path" 0 4 (isearch-regexp-function nil isearch-case-fold-search t)) #("al" 0 2 (isearch-regexp-function nil isearch-case-fold-search t)) #("33" 0 2 (isearch-regexp-function nil isearch-case-fold-search t)) #("ls" 0 2 (isearch-regexp-function nil isearch-case-fold-search t)) #("localhost" 0 9 (isearch-case-fold-search t isearch-regexp-function nil)) #("mode" 0 4 (isearch-case-fold-search t isearch-regexp-function nil)) #("helm" 0 4 (isearch-regexp-function nil isearch-case-fold-search t)) #("he" 0 2 (isearch-regexp-function nil isearch-case-fold-search t)) #("swi" 0 3 (isearch-regexp-function nil isearch-case-fold-search t)) #("go" 0 2 (isearch-regexp-function nil isearch-case-fold-search t)) #("test" 0 4 (isearch-case-fold-search t isearch-regexp-function nil))))
+(setq search-ring '(#("re" 0 2 (isearch-case-fold-search t isearch-regexp-function nil)) #("wget" 0 4 (isearch-case-fold-search t isearch-regexp-function nil)) #("switch-bu" 0 9 (isearch-regexp-function nil isearch-case-fold-search t)) #("helm" 0 4 (isearch-case-fold-search t isearch-regexp-function nil)) #("ivy" 0 3 (isearch-regexp-function nil isearch-case-fold-search t)) #("lan" 0 3 (isearch-regexp-function nil isearch-case-fold-search t)) #("vie" 0 3 (isearch-regexp-function nil isearch-case-fold-search t)) #("src" 0 3 (isearch-regexp-function nil isearch-case-fold-search t)) #("add-hoo" 0 7 (isearch-case-fold-search t isearch-regexp-function nil)) #("ido" 0 3 (isearch-case-fold-search t isearch-regexp-function nil)) #("c-c c-d" 0 7 (isearch-case-fold-search t isearch-regexp-function nil)) #("switch" 0 6 (isearch-regexp-function nil isearch-case-fold-search t)) #("backgr" 0 6 (isearch-regexp-function nil isearch-case-fold-search t)) #("public" 0 6 (isearch-regexp-function nil isearch-case-fold-search t)) #("ivy-sw" 0 6 (isearch-regexp-function nil isearch-case-fold-search t)) #("ibus" 0 4 (isearch-case-fold-search t isearch-regexp-function nil))))
 (setq regexp-search-ring nil)
 (setq register-alist nil)
-(setq file-name-history '(#("/sudo:root@devuan:/etc/hosts" 0 6 (ivy-index 1) 6 10 (ivy-index 1 tramp-default t) 10 11 (ivy-index 1) 11 17 (ivy-index 1 tramp-default t) 17 28 (ivy-index 1)) #("/home/zakhar/.Xresources.d/" 0 27 (ivy-index 0)) #("/home/zakhar/.emacs" 0 19 (ivy-index 1)) #("/home/zakhar/.Xresources.d/colors" 0 33 (ivy-index 0)) #("/home/zakhar/sandbox/lab3/backend/src/views/Home.vue" 0 52 (ivy-index 3)) #("/home/zakhar/gopath/src/горутины.go" 0 35 (ivy-index 0)) #("/home/zakhar/gopath/src/орбработка ошибок.go" 0 44 (ivy-index 0)) #("/home/zakhar/gopath/src/stringers.go" 0 36 (ivy-index 0)) #("/home/zakhar/gopath/src/переключатели типа type switch.go" 0 57 (ivy-index 0)) #("/home/zakhar/gopath/src/пустой интерфейс преобразование к типу.go" 0 65 (ivy-index 0)) #("/home/zakhar/gopath/src/пустой интерфейс.go" 0 43 (ivy-index 0)) #("/home/zakhar/gopath/src/замыкания го.go" 0 39 (ivy-index 8)) #("/home/zakhar/.zshrc" 0 19 (ivy-index 0)) #("/home/zakhar/Pictures/girls/12321323.jpg" 0 40 (ivy-index 5)) #("/home/zakhar/Pictures/girls/1032086.jpg" 0 39 (ivy-index 2)) #("/home/zakhar/Pictures/girls/123dffrttert.jpeg" 0 45 (ivy-index 6)) #("/home/zakhar/Pictures/girls/1223ma12312313xresdefault.jpg" 0 57 (ivy-index 3)) #("/home/zakhar/Pictures/girls/1625627684_11-phonoteka-org-p-anime-art-na-klaviaturu-krasivo-11.jpg" 0 96 (ivy-index 20)) #("/home/zakhar/sandbox/lab3/backend/server.go" 0 43 (ivy-index 10)) #("/sudo:root@devuan:/etc/resolv.conf" 0 6 (ivy-index 1) 6 10 (tramp-default t ivy-index 1) 10 11 (ivy-index 1) 11 17 (tramp-default t ivy-index 1) 17 34 (ivy-index 1)) #("/home/zakhar/.emacs.d/" 0 22 (ivy-index 0)) #("/home/zakhar/sandbox/lab1/products.html" 0 39 (ivy-index 5)) #("/home/zakhar/sandbox/lab1/about.html" 0 36 (ivy-index 3)) #("/home/zakhar/sandbox/lab1/index.html" 0 36 (ivy-index 3)) #("/home/zakhar/gopath/src/вложенные интерфейсы.go" 0 47 (ivy-index 0)) #("/home/zakhar/gopath/src/реализация нескольких интерфейсов.go" 0 60 (ivy-index 0)) #("/home/zakhar/gopath/src/структура.go" 0 36 (ivy-index 0)) #("/home/zakhar/gopath/src/интерфейсы.go" 0 37 (ivy-index 0)) #("/home/zakhar/.config/nvim/init.vim" 0 34 (ivy-index 0)) #("/home/zakhar/gopath/src/диапозон_range.go" 0 41 (ivy-index 6)) #("/home/zakhar/gopath/src/make динамические массивы срезы append.go" 0 65 (ivy-index 6)) #("/home/zakhar/gopath/src/карты map.go" 0 36 (ivy-index 0)) #("/home/zakhar/gopath/src/создание среза с помощью make.go" 0 56 (ivy-index 6)) #("/home/zakhar/gopath/src/.#создание среза с помощью make.go" 0 58 (ivy-index 2)) #("/home/zakhar/gopath/src/массивы.go" 0 34 (ivy-index 6)) #("/home/zakhar/.config/i3/config" 0 30 (ivy-index 0)) #("/home/zakhar/gopath/src/указатели.go" 0 36 (ivy-index 0)) #("/home/zakhar/gopath/src/defer_test.go" 0 37 (ivy-index 0)) #("/home/zakhar/gopath/src/main.go" 0 31 (ivy-index 0)) #("/home/zakhar/gopath" 0 19 (ivy-index 0)) #("/sudo:root@devuan:/etc/profile" 0 6 (ivy-index 1) 6 10 (ivy-index 1 tramp-default t) 10 11 (ivy-index 1) 11 17 (ivy-index 1 tramp-default t) 17 30 (ivy-index 1)) #("/home/zakhar/новые термины.txt" 0 30 (ivy-index 0)) #("/etc/hosts" 0 10 (ivy-index 1)) #("/home/zakhar/.1C/" 0 17 (ivy-index 2)) #("/sudo:root@devuan:/etc/sysctl.conf" 0 6 (ivy-index 0) 6 10 (tramp-default t ivy-index 0) 10 11 (ivy-index 0) 11 17 (tramp-default t ivy-index 0) 17 34 (ivy-index 0)) #("/etc/wireguard/publickey" 0 24 (ivy-index 3)) #("/etc/wireguard/wg0.conf" 0 23 (ivy-index 4)) #("/etc/wireguard/privatekey" 0 25 (ivy-index 2)) #("/home/zakhar/sandbox/scripts/Циклы.rb" 0 37 (ivy-index 0)) #("/home/zakhar/scripts/Циклы.rb" 0 29 (ivy-index 0)) #("/home/zakhar/scripts/Ци" 0 23 (ivy-index 0)) #("/home/zakhar/em.rb" 0 18 (ivy-index 0)) #("/home/zakhar/sandbox/scripts/" 0 29 (ivy-index 8)) #("/home/zakhar/" 0 13 (ivy-index 0)) "~/" #("/sudo:root@devuan:/etc/init.d/offpcspkr" 0 6 (ivy-index 0) 6 10 (ivy-index 0 tramp-default t) 10 11 (ivy-index 0) 11 17 (ivy-index 0 tramp-default t) 17 39 (ivy-index 0)) #("/sudo:root@devuan:/etc/X11/default-display-manager" 0 6 (ivy-index 1) 6 10 (tramp-default t ivy-index 1) 10 11 (ivy-index 1) 11 17 (tramp-default t ivy-index 1) 17 50 (ivy-index 1)) #("/home/zakhar/.config/" 0 21 (ivy-index 0)) #("/sudo:root@devuan:/etc/apt/sources.list.d/dbeaver.list" 0 6 (ivy-index 2) 6 10 (ivy-index 2 tramp-default t) 10 11 (ivy-index 2) 11 17 (ivy-index 2 tramp-default t) 17 54 (ivy-index 2)) #("/sudo:root@devuan:/etc/apt/sources.list" 0 6 (ivy-index 1) 6 10 (ivy-index 1 tramp-default t) 10 11 (ivy-index 1) 11 17 (ivy-index 1 tramp-default t) 17 39 (ivy-index 1)) #("/home/zakhar/main.go" 0 20 (ivy-index 1)) #("/home/zakhar/scripts/script.sh" 0 30 (ivy-index 0)) #("/sudo:root@devuan:/etc/hostss" 0 6 (ivy-index 0) 6 10 (tramp-default t ivy-index 0) 10 11 (ivy-index 0) 11 17 (tramp-default t ivy-index 0) 17 29 (ivy-index 0)) #("/home/zakhar/make_files/Makefile2" 0 33 (ivy-index 4)) #("/home/zakhar/make_files/m2.c" 0 28 (ivy-index 7)) #("/home/zakhar/make_files/m1.c" 0 28 (ivy-index 5)) #("/home/zakhar/make_files/Makefile" 0 32 (ivy-index 2)) #("/home/zakhar/make_files/Makefile1" 0 33 (ivy-index 3)) #("/home/zakhar/.config/i3status/config" 0 36 (ivy-index 0)) #("/home/zakhar/questions.txt" 0 26 (ivy-index 99)) #("/home/zakhar/Downloads/" 0 23 (ivy-index 0)) #("/home/zakhar/презентация/info.txt" 0 33 (ivy-index 0)) #("/home/zakhar/.xinitrc" 0 21 (ivy-index 0)) #("/sudo:root@devuan:/etc/privoxy/config" 0 6 (ivy-index 0) 6 10 (tramp-default t ivy-index 0) 10 11 (ivy-index 0) 11 17 (tramp-default t ivy-index 0) 17 37 (ivy-index 0)) #("/home/zakhar/sandbox/bots/vkBot1/app.js" 0 39 (ivy-index 3)) #("/sudo:root@devuan:/etc/rc.conf" 0 6 (ivy-index 1) 6 10 (ivy-index 1 tramp-default t) 10 11 (ivy-index 1) 11 17 (ivy-index 1 tramp-default t) 17 30 (ivy-index 1))))
+(setq file-name-history '(#("/home/user/.config/fish/config.fish" 0 35 (ivy-index 0)) #("/home/user/.zhistory" 0 20 (ivy-index 0)) #("/home/user/.my-bashrc" 0 21 (ivy-index 0)) #("/home/user/.bashrc" 0 18 (ivy-index 2)) #("/home/user/Arduino/Blink_copy_20231012213015/" 0 45 (ivy-index 3)) #("/home/user/code/projects/" 0 25 (ivy-index 1)) #("/home/user/.config/neofetch/config.conf" 0 39 (ivy-index 0)) #("/sudo:root@server:/etc/apt/sources.list" 0 6 (ivy-index 1) 6 10 (tramp-default t ivy-index 1) 10 11 (ivy-index 1) 11 17 (tramp-default t ivy-index 1) 17 39 (ivy-index 1)) #("/home/user/.config/i3/config" 0 28 (ivy-index 0)) #("/home/user/.emacs" 0 17 (ivy-index 1)) #("/home/user/.emacs.d/" 0 20 (ivy-index 0)) #("/home/user/.config/nvim/init.vim" 0 32 (ivy-index 0)) #("/home/user/.zshrc" 0 17 (ivy-index 0)) #("/home/user/code/projects/hotkeys/main.py" 0 40 (ivy-index 7))))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 208
-  "/home/zakhar/sandbox/scripts/Общение между процессами с помощью очередей.py"
-  "Общение между процессами с помощью очередей.py"
-  'python-mode
-  '(eldoc-mode ivy-mode auto-complete-mode)
-  63
-  '(715 nil)
-  nil
-  nil
-  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 25509 14121 257705 417000) (buffer-file-coding-system . undecided-dos))
-  '((mark-ring (715))))
-
-(desktop-create-buffer 208
-  "/home/zakhar/.emacs"
-  ".emacs"
-  'emacs-lisp-mode
-  '(eldoc-mode ivy-mode auto-complete-mode)
-  7789
-  '(8875 nil)
-  nil
-  nil
-  '((buffer-display-time 25509 14072 92955 421000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (8820 10137))))
-
-(desktop-create-buffer 208
-  "/home/zakhar/sandbox/lab3/backend/src/views/Home.vue"
-  "Home.vue"
-  'vue-html-mode
+  "/home/user/.my-bashrc"
+  ".my-bashrc"
+  'fundamental-mode
   '(ivy-mode)
-  268
-  '(16 nil)
-  nil
-  nil
-  '((tab-width . 2) (buffer-display-time 25509 14055 527487 676000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (2892 2763 2277 2799))))
-
-(desktop-create-buffer 208
-  "/home/zakhar/.xinitrc"
-  ".xinitrc"
-  'sh-mode
-  '(ivy-mode auto-complete-mode)
-  434
-  '(349 nil)
-  nil
-  nil
-  '((buffer-display-time 25509 13894 279494 943000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (349 169 118 622 558 144 45))))
-
-(desktop-create-buffer 208
-  "/home/zakhar/.zshrc"
-  ".zshrc"
-  'sh-mode
-  '(ivy-mode auto-complete-mode)
-  903
-  '(963 nil)
-  nil
-  nil
-  '((buffer-display-time 25509 12993 847209 41000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (3440 3244 4094 4768 5345 1663 1634 4795 4424 1014 1685 3510 5814 1042 1069 1332))))
-
-(desktop-create-buffer 208
-  "/home/zakhar/sandbox/lab3/backend/server.go"
-  "server.go"
-  'go-mode
-  '(ivy-mode auto-complete-mode)
-  3159
-  '(2648 nil)
-  nil
-  nil
-  '((indent-tabs-mode . t) (buffer-display-time 25509 12925 721223 670000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (369 145 2662 476 476 695 511 377 500))))
-
-(desktop-create-buffer 208
-  "/home/zakhar/.Xresources.d/colors"
-  "colors"
-  'conf-xdefaults-mode
-  '(ivy-mode)
-  1786
+  57
   '(1 nil)
   nil
   nil
-  '((buffer-display-time 25509 12827 627627 63000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring (1212 540 495))))
-
-(desktop-create-buffer 208
-  "/etc/wireguard/privatekey"
-  "privatekey"
-  'fundamental-mode
-  '(ivy-mode)
-  45
-  '(1 nil)
-  nil
-  nil
-  '((buffer-display-time 25509 9671 24346 379000) (buffer-file-coding-system . undecided-unix))
+  '((buffer-display-time 26042 60234 451621 584000) (buffer-file-coding-system . utf-8-unix))
   '((mark-ring nil)))
 
 (desktop-create-buffer 208
-  "/home/zakhar/sandbox/lab1/products.html"
-  "products.html"
-  'mhtml-mode
-  '(ivy-mode)
-  89
-  '(1529 nil)
-  nil
-  nil
-  '((buffer-display-time 25509 9742 386839 521000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (1190 1340 1490 62))))
-
-(desktop-create-buffer 208
-  "/home/zakhar/ebash/func_factorial.sh"
-  "func_factorial.sh"
-  'sh-mode
-  '(ivy-mode auto-complete-mode)
-  104
-  '(nil nil)
-  nil
-  nil
-  '((buffer-display-time 25509 5605 647376 463000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  "/home/zakhar/scripts/script.sh"
-  "script.sh"
-  'sh-mode
-  '(ivy-mode auto-complete-mode)
-  252
-  '(124 nil)
-  nil
-  nil
-  '((buffer-display-time 25509 4851 257897 615000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (124 63))))
-
-(desktop-create-buffer 208
-  "/home/zakhar/.config/i3/config"
-  "config"
-  'conf-space-mode
-  '(ivy-mode)
-  9265
-  '(2959 nil)
-  nil
-  nil
-  '((buffer-display-time 25509 6063 673009 605000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (1315 1244 9571 1 9571 1 570 687 7271 2959 2702 8822 8816 9571))))
-
-(desktop-create-buffer 208
-  nil
-  ".Xresources.d"
-  'dired-mode
-  '(ivy-mode)
-  191
-  '(nil nil)
-  t
-  '("/home/zakhar/.Xresources.d/")
-  '((buffer-display-time 25509 2485 482028 214000))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  "/home/zakhar/.config/i3status/config"
-  "config"
-  'conf-unix-mode
-  '(ivy-mode)
-  643
-  '(643 nil)
-  nil
-  nil
-  '((buffer-display-time 25508 63643 516856 877000) (buffer-file-coding-system . utf-8-dos))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  "/home/zakhar/sandbox/scripts/Циклы.rb"
-  "Циклы.rb"
-  'ruby-mode
-  '(ivy-mode auto-complete-mode)
-  203
-  '(nil nil)
-  nil
-  nil
-  '((indent-tabs-mode) (buffer-display-time 25508 50314 781145 721000) (buffer-file-coding-system . utf-8-dos))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  "/usr/share/emacs/27.1/etc/DEBUG"
-  "DEBUG"
-  'outline-mode
-  '(ivy-mode view-mode goto-address-mode)
-  1
-  '(nil nil)
-  t
-  nil
-  '((buffer-display-time 25508 40468 156287 360000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  "/home/zakhar/em.rb"
-  "em.rb"
-  'ruby-mode
-  '(ivy-mode auto-complete-mode)
-  50
-  '(nil nil)
-  nil
-  nil
-  '((indent-tabs-mode) (buffer-display-time 25508 20288 931721 919000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  "/home/zakhar/sandbox/lab1/about.html"
-  "about.html"
-  'mhtml-mode
-  '(ivy-mode)
-  1467
-  '(1192 nil)
-  nil
-  nil
-  '((buffer-display-time 25508 17041 167122 615000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (1168 1372 1496 1372 1344 1383 1192 90))))
-
-(desktop-create-buffer 208
-  "/home/zakhar/appp.py"
-  "appp.py"
-  'python-mode
-  '(eldoc-mode ivy-mode auto-complete-mode)
-  38
-  '(nil nil)
-  nil
-  nil
-  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 25508 14374 171220 561000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  "/home/zakhar/sandbox/lab1/index.html"
-  "index.html"
-  'html-mode
-  '(ivy-mode auto-complete-mode)
-  1363
-  '(1490 nil)
-  nil
-  nil
-  '((buffer-display-time 25508 13236 772543 427000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (1340 1190 1783 1739 491 491 405 94 406))))
-
-(desktop-create-buffer 208
-  "/etc/wireguard/publickey"
-  "publickey"
-  'fundamental-mode
+  "/home/user/.config/fish/config.fish"
+  "config.fish"
+  'fish-mode
   '(ivy-mode)
   1
   '(nil nil)
   nil
   nil
-  '((buffer-display-time 25508 13232 564966 911000) (buffer-file-coding-system . undecided-unix))
+  '((buffer-display-time 26042 60222 784742 137000) (buffer-file-coding-system . undecided-unix))
   '((mark-ring nil)))
 
 (desktop-create-buffer 208
-  "/home/zakhar/sandbox/bots/vkBot1/app.js"
-  "app.js"
-  'js-mode
-  '(ivy-mode auto-complete-mode)
-  2064
-  '(nil nil)
-  nil
-  nil
-  '((buffer-display-time 25508 12771 674199 162000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  "/home/zakhar/.config/user-dirs.dirs"
-  "user-dirs.dirs"
+  "/home/user/.zhistory"
+  ".zhistory"
   'fundamental-mode
   '(ivy-mode)
-  567
-  '(nil nil)
+  3177
+  '(1 nil)
   nil
   nil
-  '((buffer-display-time 25509 2160 367926 124000) (buffer-file-coding-system . undecided-unix))
+  '((buffer-display-time 26042 60220 348609 329000) (buffer-file-coding-system . undecided-unix))
   '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/user/.bashrc"
+  ".bashrc"
+  'sh-mode
+  '(ivy-mode)
+  10548
+  '(11481 nil)
+  nil
+  nil
+  '((buffer-display-time 26042 60103 656291 193000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (11481 12505 265))))
 

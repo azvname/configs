@@ -1,24 +1,6 @@
-;; -*- emacs-lisp -*- <22/12/23 09:14:26 /home/zakhar/.emacs.d/tramp>
+;; -*- emacs-lisp -*- <24/01/27 21:55:20 /home/user/.emacs.d/tramp>
 ;; Tramp connection history.  Don't change this file.
 ;; Run `M-x tramp-cleanup-all-connections' instead.
 
-(((tramp-file-name "sudo" "root" nil "devuan" nil nil nil)
-  ("uname" "Linux 5.10.0-19-amd64")
-  ("locale" "LC_ALL=C.UTF-8")
-  ("test" "test")
-  ("remote-path"
-   ("/bin" "/usr/bin" "/sbin" "/usr/sbin" "/usr/local/bin" "/usr/local/sbin"))
-  ("pipe-buf" 4096)
-  ("remote-shell" "/bin/sh")
-  ("file-exists" "test -e")
-  ("stat" "env QUOTING_STYLE=locale \\stat")
-  ("id" "/usr/bin/id")
-  ("gid-string" "root")
-  ("gid-integer" 0)
-  ("uid-integer" 0)
-  ("readlink" "\\readlink")
-  ("perl-file-spec" t)
-  ("perl-cwd-realpath" t)
-  ("perl" "\\perl")
-  ("tmpdir" "/sudo:root@devuan:/tmp")
-  ("case-insensitive" nil)))
+(((tramp-file-name "sudo" "root" nil "server" nil nil nil)
+  nil))

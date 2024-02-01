@@ -21,6 +21,10 @@ Major mode for editing `vimrc', `xxx.vim' and `.exrc' configuration files.
 
 ;;;***
 
+;;;### (autoloads nil nil ("vimrc-mode-pkg.el") (0 0 0 0))
+
+;;;***
+
 ;; Local Variables:
 ;; version-control: never
 ;; no-byte-compile: t
