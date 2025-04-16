@@ -1,0 +1,53 @@
+!!#include ".Xresources.d/rxvt-unicode"
+#include ".Xresources.d/colors"
+xft.dpi:96
+Xft.antialias:true
+!Xft.rgba:rgb
+Xft.hinting:full
+Xft.hintstyle:hintslight
+Xft.autohint:true
+Xft.lcdfilter:lcddefault
+URxvt.scrollBar:true
+URxvt.scrollBar_right:true
+URxvt*scrollstyle:plain
+! URxvt*scrollColor:#850faf
+!URxvt*scrollColor:#aaaaaa
+URxvt*scrollColor:#777777
+URxvt*background:#222222
+URxvt*foreground:#aaaaaa
+URxvt*jumpScroll:true
+URxvt*skipScroll:true
+URxvt.letterSpace:0
+URxvt.underlineURLs:false
+URxvt*saveLines:13000
+URxvt*skipBuiltinGlyphs:true
+URxvt.internalBorder:15
+URxvt*cursorBlink:true
+URxvt.secondaryScroll:0
+URxvt.boldFont:
+URxvt.secondaryWheel:1
+URxvt*lineSpace:0
+!URxvt*title:term
+! URxvt*font:-xos4-terminus-medium-r-normal-*-16-*-*-72-*-*-*-1
+! URxvt*font: xft:DejaVu Sans Mono:size=12
+!URxvt.font:xft:monospace:pixelsize=14
+!URxvt*font:xft:source pro regular:9
+!URxvt*font:xft:monospace:9
+!URxvt*font:xft:bront:11
+!URxvt*font:xft:dejavu:11
+!URxvt.font:xft:DejaVu Sans Mono:11
+URxvt*font: xft:Terminus:pixelsize=18
+URxvt*depth:32
+URxvt*fading: 10
+URxvt*fadeColor:black
+!URxvt.inputMethod:ibus
+URxvt.preeditType:OverTheSpot
+!URxvt.perl-ext-common:  resize-font
+URxvt.keysym.Shift-Up:command:\033]720;1\007
+URxvt.keysym.Shift-Down:command:\033]721;1\007
+!URxvt.keysym.C-plus:resize-font:bigger
+!URxvt.keysym.C-minus:resize-font:smaller
+!URxvt.resize-font.step:2
+Emacs*UseXIM: false
+
+

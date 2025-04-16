@@ -1,0 +1,43 @@
+!URxvt*background:#212121
+URxvt*transparent:true
+URxvt*shading:5
+!URxvt*backgroundPixmap: /home/user/Pictures/wallpapers/c776a76c84d11242f226b23b574f10c2.jpeg
+!URxvt*backgroundPixmap: /home/user/Pictures/wallpapers/c776a76c84d11242f226b23b574f10c2.jpeg;style=tiled
+
+
+! special
+*.foreground:   #a3a3a1
+*.background:   #0c0d0e
+*.cursorColor:  #00ff00
+
+! black
+*.color0:       #0c0d0e
+*.color8:       #737475
+
+! red
+*.color1:       #e31a1c
+*.color9:       #e31a1c
+
+! green
+*.color2:       #31a354
+*.color10:      #31a354
+
+! yellow
+*.color3:       #dca060
+*.color11:      #dca060
+
+! blue
+*.color4:       #3182bd
+*.color12:      #3182bd
+
+! magenta
+*.color5:       #756bb1
+*.color13:      #756bb1
+
+! cyan
+*.color6:       #80b1d3
+*.color14:      #80b1d3
+
+! white
+*.color7:       #b7b8b9
+*.color15:      #fcfdfe

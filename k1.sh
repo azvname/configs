@@ -7,6 +7,7 @@ QEMU=/usr/bin/qemu-system-x86_64
 #-machine q35,accel=kvm \
 name_os=$1
 
+
 ${QEMU} \
 -smp 4,sockets=1,cores=4,threads=1 \
 -device VGA,vgamem_mb=128 \
